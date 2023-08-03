@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7DayOfCode - Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="calculadora">
+        <div class="visor">
+            <input type="text" name="" id="visor" value="">
+        </div>
+        <div class="teclado">
+            <button class="teclas limpar zero" id="clearAll" onclick="limpar()">C</button>
+            <button class="teclas" id="clear" onclick="voltar()"><i class="bi bi-backspace"></i></button>
+            <button class="teclas" id="dividir" onclick="adicionar('/')">/</button>
+            <button class="teclas" id="7" onclick="adicionar('7')">7</button>
+            <button class="teclas" id="8" onclick="adicionar('8')">8</button>
+            <button class="teclas" id="9" onclick="adicionar('9')">9</button>
+            <button class="teclas" id="multiplicar" onclick="adicionar('*')">*</button>
+            <button class="teclas" id="4" onclick="adicionar('4')">4</button>
+            <button class="teclas" id="5" onclick="adicionar('5')">5</button>
+            <button class="teclas" id="6" onclick="adicionar('6')">6</button>
+            <button class="teclas" id="subtrair" onclick="adicionar('-')">-</button>
+            <button class="teclas" id="1" onclick="adicionar('1')">1</button>
+            <button class="teclas" id="2" onclick="adicionar('2')">2</button>
+            <button class="teclas" id="3" onclick="adicionar('3')">3</button>
+            <button class="teclas" id="somar" onclick="adicionar('+')">+</button> 
+            <button class="teclas zero" id="0" onclick="adicionar('0')">0</button>
+            <button class="teclas" id="decimal" onclick="adicionar('.')">.</button>
+            <button class="teclas calculo" id="calcular" onclick="calcular()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

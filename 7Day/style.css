@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    background-color: rgb(16, 2, 39);
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 50%;
+    max-width: 600px;
+    min-width: 350px;
+    height: 470px;
+    border-radius: 5%;
+    background-color: rgb(101, 158, 165);
+    padding: 22px 12px;
+    box-shadow: 2px 3px 5px rgb(101, 158, 165);
+}
+
+.visor {
+    padding-top: 5%;
+    width: 100%;
+}
+
+#visor {
+    text-align: end;
+    padding: 5px 20px;
+    font-size: 1.125rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5% 0 0 0;
+    width: 100%;
+}
+
+.teclas {
+    height: 60px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 1.125em;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.555);
+}
+
+.teclas:hover {
+    background-color: rgba(243, 191, 172, 0.692);
+}
+
+.limpar {
+    background-color: rgb(253, 80, 80);
+    color: white;
+
+}
+
+.limpar:hover {
+    background-color: red;
+}
+
+.calculo {
+    background-color: rgb(252, 189, 73);
+}
+
+.calculo:hover {
+    background-color: rgb(245, 131, 2);
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;   
+}
+
